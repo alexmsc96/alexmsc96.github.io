@@ -1,0 +1,111 @@
+body {
+    background-color: #F2F2F2;
+    display: block;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.3rem;
+    font-size: 16px;
+    margin: 2rem;
+}
+
+h1 {
+    background-color: #7C92A690;
+    border-radius: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+h1:hover {
+    background-color: #7C92A650;
+    transition: 0.5s;
+}
+
+hr {
+    border: 5px dashed #D7B0B5;
+    border-radius: 5rem;
+}
+
+hr:hover {
+    border: 5px dashed black;
+    transition: 1s;
+}
+
+footer {
+    background-color:  #7C92A690;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+a:visited {
+    color: #F2F2F2;
+}
+
+a:hover {
+    color: #F2F2F2;
+}
+
+a:active {
+    color: #D7B0B5;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+em {
+    color: #6092A6;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+blockquote {
+    font-size: 1.2rem;;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+blockquote:hover {
+    background-color: #7C92A650;
+    transition: 0.5s;
+}
+
+cite {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+ol {
+    color: #6092A6;
+    font-size: 1.2rem;
+}
+
+h1 img {
+    float: left;
+    width: 5rem;
+    margin-top: -0.8em;
+    margin-right: 1rem;
+}
+
+header:after {
+    content: "";
+    display: table;
+}
+
+@media only screen and (min-width: 700px) {
+    body{
+        max-width: 30%;
+        margin: auto;
+    }
+}
