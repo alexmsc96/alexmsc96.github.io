@@ -67,8 +67,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
-    color: #D95032;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0 5rem;
 }
 
 footer {
@@ -134,4 +135,59 @@ cite {
     transition: 0.5s ease;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    line-height: 3rem;
+    height: 80vh;
+}
+
+.contact h1 {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.social {
+    margin-top: 1.5rem;
+}
+
+fieldset { 
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 3rem 0 1.5rem 0;
+}
+
+label {
+	display: block;
+    margin: 0 2rem;
+    font-size: 1.3rem;
+}
+
+input {
+	display: block;
+	margin: 1rem 2rem;
+	width: 20rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
+	padding: 0.2rem 1rem;
+	border-radius: 10px;
+	border: none;
+}
+
+input:last-of-type {
+    margin-bottom: 2rem;
+}
+
+label:first-of-type {
+    margin-top: -1.5rem;
 }
