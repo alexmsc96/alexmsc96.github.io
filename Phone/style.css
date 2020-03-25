@@ -95,9 +95,6 @@ h1 {
     display: inline-block;
     width: 90%;
     padding-top: 1rem;
-}
-
-.arrow {
-    margin-left: 1rem;
-    align-self: flex-start;
+    border-bottom: 2px solid #D95032;
+    padding-bottom: 2rem;
 }
