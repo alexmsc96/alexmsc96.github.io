@@ -48,7 +48,7 @@ header {
     font-size: 1rem;
 }
 
-.nav-bar a:hover{
+.nav-bar a:focus{
     transition: 0.5s;
     -webkit-text-fill-color: #B3E7F2;
     -webkit-text-stroke-width: 1px;
