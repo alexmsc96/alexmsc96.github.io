@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f79071, #0c4945 );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin: 0rem 5rem 0 5rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-input {
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #024249;
+    width: 80%;
+}
+
+.weather-btn {
+    padding: 0.5rem;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #024249;
+    width: 6rem;
+}
+
+.weather-btn:hover {
+    background: #16817a;
+    color: white;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    min-height: 20rem;
+    margin-top: 2rem;
+    color: White;
+}
+
+.icon {
+    min-width: 10rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .city-input {
+        width: 50%;
+        padding: 0.2rem;
+    }
+    .weather-btn {
+        padding: 0.2rem;
+        width: 20%;
+    }
+    .weather-info {
+        font-size: 1.5rem;
+    }
+}
