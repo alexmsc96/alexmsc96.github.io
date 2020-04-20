@@ -17,7 +17,7 @@ function getWeather(event){
         return;
     }
     let city = cityInput.value;
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5fd991c02604126a3729cb3a26e017ed&units=metric`
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5fd991c02604126a3729cb3a26e017ed&units=metric`
     fetch(api)
         .then(response => {
             return response.json()
