@@ -21,25 +21,41 @@ const day5 = document.querySelector('.day-5');
 cityInput.addEventListener('keyup', getWeatherOnSubmit);
 window.addEventListener('load', getWeatherOnLoad);
 
-
 function getWeatherOnLoad(e) {
     navigator.geolocation.getCurrentPosition((data) =>{
-        acceptLocation.classList.add('hide');
-        main.classList.remove('hide');
-        footer.classList.remove('hide');
         const lat = data.coords.latitude;
         const long = data.coords.longitude;
         const api = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=5fd991c02604126a3729cb3a26e017ed&units=metric`;
         apiHit(api);
+        setTimeout(function show(){
+            acceptLocation.classList.add('hide');
+            main.classList.remove('hide');
+            footer.classList.remove('hide');
+            document.querySelector('.main-left').style.animation = 'slideinleft .5s ease-in'
+            document.querySelector('.main-right').style.animation = 'slideinright .5s ease-in'
+            document.querySelector('.footer').style.animation = 'slideup .5s ease-in'
+        },300)
     });
 }
 
 function getWeatherOnSubmit (e) {
     if (e.keyCode === 13) {
+        document.querySelector('.main-left').style.animation = '';
+        document.querySelector('.main-right').style.animation = '';
+        document.querySelector('.footer').style.animation = '';
+        main.classList.add('hide');
+        footer.classList.add('hide');
         event.preventDefault()
         let city = cityInput.value;
         const api = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=5fd991c02604126a3729cb3a26e017ed&units=metric`
         apiHit(api);
+        setTimeout(function show(){
+            main.classList.remove('hide');
+            footer.classList.remove('hide');
+            document.querySelector('.main-left').style.animation = 'show .3s ease-in'
+            document.querySelector('.main-right').style.animation = 'show .3s ease-in'
+            document.querySelector('.footer').style.animation = 'show .3s ease-in'
+        },300)
     }
 }  
 
@@ -144,5 +160,4 @@ function nextDaysWeather (data) {
     day5.textContent = `${day5date}`;
     document.querySelector('.day-5-temperature').textContent = `${data.list[39].main.temp} °C`;
     document.querySelector('.day-5-feel').textContent = `feels like ${data.list[39].main.feels_like} °C`;
-
 }
