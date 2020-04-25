@@ -232,4 +232,20 @@ footer {
         font-size: 2rem;
         text-align: center;
     }
+    .day-weather {
+        max-width: 40%;
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+    .day-1,
+    .day-2,
+    .day-3,
+    .day-4,
+    .day-5
+    {
+        font-size: 1rem;
+    }
+    .day-weather:last-child {
+        margin-bottom: 1rem;
+    }
 }
