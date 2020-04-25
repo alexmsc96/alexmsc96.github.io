@@ -142,7 +142,7 @@ footer {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (orientation: portrait) {
     footer {
         display: flex;
         justify-content: center;
