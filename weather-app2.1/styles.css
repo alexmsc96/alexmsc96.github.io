@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
-*, *::before , *::after  {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    background: url("sara-the-freak-A4UojtraSrw-unsplash.jpg") no-repeat center center fixed;
+
+body {
+    background: url("./images/sara-the-freak-A4UojtraSrw-unsplash.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-body {
     font-family: Poppins, sans-serif;
     color: white;
     font-size: 2rem;
@@ -30,47 +30,52 @@ body {
 
 @keyframes slideinleft {
     from {
-      transform: translateX(-10%);
-      opacity: 0;
+        transform: translateX(-10%);
+        opacity: 0;
     }
-  
+
     to {
-      transform: translateX(0%);
-      opacity: 1;
+        transform: translateX(0%);
+        opacity: 1;
     }
-  }
+}
 
 @keyframes slideinright {
     from {
-      transform: translateX(10%);
-      opacity: 0;
+        transform: translateX(10%);
+        opacity: 0;
     }
-  
+
     to {
-      transform: translateX(0%);
-      opacity: 1;
+        transform: translateX(0%);
+        opacity: 1;
     }
-  }
+}
 
 @keyframes slideup {
     from {
-      transform: translateY(10%);
-      opacity: 0;
+        transform: translateY(10%);
+        opacity: 0;
     }
-  
+
     to {
-      transform: translateX(0%);
-      opacity: 1;
+        transform: translateX(0%);
+        opacity: 1;
     }
-  }
+}
 
 @keyframes show {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
-.accept-location{
+.accept-location {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -105,9 +110,11 @@ body {
 .main-left .city {
     font-size: 1.2rem;
 }
+
 .main-left .description {
     font-size: 1.8rem;
 }
+
 .temperature {
     margin: 1rem 0;
     font-weight: bold;
@@ -118,7 +125,7 @@ body {
     max-width: 5vw;
 }
 
-.main-right{
+.main-right {
     display: flex;
     flex-direction: column;
     margin: 7rem 11rem 5rem 5rem;
@@ -158,7 +165,7 @@ footer {
     transition: 0.5s ease all;
     min-height: 300px;
     border: 1px solid grey;
-    box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 22px -2px rgba(0, 0, 0, 0.5);
     margin-right: 2rem;
 }
 
@@ -170,8 +177,7 @@ footer {
 .day-2,
 .day-3,
 .day-4,
-.day-5
- {
+.day-5 {
     font-size: 1.2rem;
 }
 
@@ -181,7 +187,7 @@ footer {
 }
 
 .day-weather:hover {
-    box-shadow: 0px 0px 22px -2px rgba(0,0,0,1);
+    box-shadow: 0px 0px 22px -2px rgba(0, 0, 0, 1);
     transform: scale(1);
     transition: .5s all ease;
 }
@@ -202,6 +208,7 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
+
     .main {
         display: flex;
         flex-grow: 1;
@@ -209,42 +216,51 @@ footer {
         align-items: center;
         flex-direction: column;
     }
+
     .hide {
         display: none;
     }
+
     .main-left {
         max-height: 100vh;
         margin: 5rem 5rem 5rem 5rem;
     }
-    .main-right{
+
+    .main-right {
         max-height: 100vh;
     }
+
     .main-left img {
         min-width: 30vw;
     }
-    .icons{
+
+    .icons {
         font-size: 1.5rem;
     }
+
     .icons img {
         min-width: 20vw;
     }
-    .accept-location{
+
+    .accept-location {
         font-size: 2rem;
         text-align: center;
     }
+
     .day-weather {
         max-width: 40%;
         font-size: 1rem;
         margin: 0 1rem;
     }
+
     .day-1,
     .day-2,
     .day-3,
     .day-4,
-    .day-5
-    {
+    .day-5 {
         font-size: 1rem;
     }
+
     .day-weather:last-child {
         margin-bottom: 1rem;
     }
