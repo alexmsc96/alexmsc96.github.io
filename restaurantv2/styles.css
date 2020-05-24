@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: rgba(92, 26, 49);
+    --font: rgb(92, 26, 49);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar styles start */
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    margin: .5em;
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 1.5em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle:checked~.nav-toggle-label {
+    transform: rotate(90deg);
+}
+
+
+/* Section styles starts here */
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-text {
+    font-size: 3rem;
+    color: var(--font);
+    font-weight: 300;
+    line-height: 168.3%;
+    letter-spacing: 0.185em;
+    margin: 1.5em 1em 4em 1em;
+    border: 2px solid rgb(92, 26, 49);
+    padding: 2em .3em;
+    z-index: -1;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    background: url(images/home.png) no-repeat;
+    width: 100vw;
+    height: 100vh;
+    top: 60vh;
+    left: 30vw;
+    z-index: -1;
+}
+
+.about-text {
+    font-size: 1.7rem;
+    color: var(--font);
+    font-weight: 400;
+    line-height: 168.3%;
+    letter-spacing: 0.185em;
+    margin-bottom: 3em;
+    line-height: 168.3%;
+    letter-spacing: 0.185em;
+    text-transform: lowercase;
+    border: 2px solid rgb(92, 26, 49);
+    margin: 0 1em;
+    z-index: -1;
+    padding: 2em .3em;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    background: url(images/about.png) no-repeat;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 60vh;
+    left: 30vw;
+}
+
+@media (min-width: 768px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 5fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / span 1;
+        font-size: 3.5rem;
+        margin: .25em;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 2px;
+        background: white;
+        position: absolute;
+        bottom: -0.25em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    .home::before {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0vh;
+        background: #5C1A31;
+        z-index: -1;
+        clip-path: polygon(calc(100% - 60%) 0%, 100% 0, 100% calc(100% - 40%), calc(100% - 20%) 100%, 0 100%, 0 calc(100% - 20%));
+    }
+
+    .home-text {
+        color: white;
+        font-size: 3rem;
+        align-self: flex-end;
+        border: none;
+        z-index: 1;
+        padding: 0;
+        margin: 0 0 1em 0;
+    }
+
+    .home::after {
+        top: 15vh;
+        left: 35vw;
+    }
+
+    .about::before {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0vh;
+        background: #5C1A31;
+        z-index: -1;
+        clip-path: polygon(0 calc(100% - 70%), 0 0, calc(100% - 20%) 0, 100% calc(100% - 65%), 100% 100%, calc(100% - 70%) 100%);
+    }
+
+    .about-text {
+        color: white;
+        margin: 0;
+        padding: 0;
+        border: none;
+        z-index: 1;
+        font-size: 1.7rem;
+        align-self: flex-start;
+        margin-top: 5em;
+        width: 40vw;
+        position: relative;
+    }
+
+    .about-text::after {
+        content: 'about';
+        position: absolute;
+        font-size: 20rem;
+        left: 0;
+        bottom: -20vh;
+        color: rgba(255, 255, 255, .1);
+        z-index: -1;
+    }
+
+    .about::after {
+        top: 50vh;
+        left: -25vw;
+    }
+}
+
+@media (min-width: 1100px) {
+    .home-text {
+        font-size: 4rem;
+        margin-right: 2em;
+    }
+
+    .home::after {
+        top: 15vh;
+        left: 50vw;
+    }
+
+
+    .about-text {
+        align-self: center;
+        font-size: 2.2rem;
+        margin-top: 0;
+    }
+
+    .about-text::after {
+        bottom: -10vh;
+        left: 10vw;
+    }
+
+    .about::after {
+        top: 45vh;
+        left: -15vw;
+    }
+}
+
+@media (min-width: 1439px) {
+    .home-text {
+        font-size: 4.5vmax;
+    }
+
+    .home::after {
+        top: 20vh;
+        left: 65vw;
+        transform: scale(1.2);
+    }
+
+    .about::after {
+        top: 45vh;
+        left: 5vw;
+        transform: scale(1.2);
+    }
+
+    .about-text {
+        align-self: flex-start;
+        margin-top: 5em;
+        font-size: 2vmax;
+    }
+
+    .about-text::after {
+        top: 50vh;
+    }
+}
