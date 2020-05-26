@@ -143,7 +143,7 @@ section {
     font-weight: 300;
     line-height: 168.3%;
     letter-spacing: 0.185em;
-    margin: 1.5em 1em 4em 1em;
+    margin: 3em 1em 4em 1em;
     border: 2px solid rgb(92, 26, 49);
     padding: 2em .3em;
     z-index: -1;
@@ -167,13 +167,12 @@ section {
     line-height: 168.3%;
     letter-spacing: 0.185em;
     margin-bottom: 3em;
-    line-height: 168.3%;
     letter-spacing: 0.185em;
     text-transform: lowercase;
     border: 2px solid rgb(92, 26, 49);
     margin: 0 1em;
     z-index: -1;
-    padding: 2em .3em;
+    padding: 1em .3em;
 }
 
 .about::after {
@@ -185,6 +184,80 @@ section {
     z-index: -1;
     top: 60vh;
     left: 30vw;
+}
+
+.chef {
+    align-items: flex-start;
+}
+
+.chef-text {
+    font-size: 1.2rem;
+    color: var(--font);
+    font-weight: 400;
+    line-height: 168.3%;
+    letter-spacing: 0.185em;
+    margin-bottom: 3em;
+    letter-spacing: 0.185em;
+    text-transform: lowercase;
+    border: 2px solid rgb(92, 26, 49);
+    margin: 5em 1em;
+    padding: 1em .3em;
+}
+
+.chef-text span {
+    font-size: 2rem;
+}
+
+.chef::after {
+    content: '';
+    position: absolute;
+    background: url(images/chef.png) no-repeat;
+    width: 90vw;
+    height: 70vh;
+    left: 50%;
+    top: 45%;
+    margin: 1em 0;
+    transform: translate(-50%);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-img {
+    display: none;
+}
+
+.iconify {
+    font-size: 1.7rem;
+}
+
+.contact-text {
+    border: 2px solid rgb(92, 26, 49);
+    margin: 1em 1em;
+    padding: 1em .3em;
+}
+
+.contact-text>* {
+    display: block;
+    text-align: left;
+    letter-spacing: 0.055em;
+    font-weight: 300;
+    line-height: 102.8%;
+    color: #431B2D;
+
+}
+
+.contact-adress {
+    font-size: 2.5rem;
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -307,6 +380,89 @@ section {
         top: 50vh;
         left: -25vw;
     }
+
+    .chef {
+        justify-content: left;
+        align-items: center;
+    }
+
+    .chef-text {
+        width: 25vw;
+        border: none;
+        padding: 0;
+        margin: 0 2em;
+        position: relative;
+    }
+
+    .chef-text::after {
+        content: 'chef';
+        position: absolute;
+        font-size: 22rem;
+        letter-spacing: 0.185em;
+        color: rgba(255, 255, 255, .1);
+        z-index: -1;
+        left: 5%;
+        bottom: -25%;
+    }
+
+    .chef::after {
+        top: 15%;
+        left: 40%;
+        transform: translate(0);
+    }
+
+    .chef::before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0vh;
+        background: #5C1A31;
+        z-index: -1;
+        clip-path: polygon(calc(100% - 70%) 0, 100% 0, 100% 100%, calc(100% - 70%) 100%);
+    }
+
+    .contact {
+        align-items: flex-start;
+    }
+
+    .contact-img {
+        display: block;
+        position: absolute;
+        top: 30vh;
+        right: -5vw;
+        transform: rotate(-77.22deg) scale(1.2);
+    }
+
+    .contact-text {
+        width: 50%;
+        border: none;
+        margin: 0;
+        margin-left: 2.5em;
+        padding: 0;
+    }
+
+    .contact::before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        background: #5C1A31;
+        z-index: -1;
+        clip-path: polygon(calc(100% - 70%) 0%, 100% calc(100% - 20%), 100% 0);
+    }
+
+    .contact::after {
+        content: 'contact';
+        position: absolute;
+        font-size: 10rem;
+        letter-spacing: 0.185em;
+        color: rgba(67, 27, 45, 0.2);
+        z-index: -2;
+        bottom: 10vh;
+        left: -15vw
+    }
 }
 
 @media (min-width: 1100px) {
@@ -319,7 +475,6 @@ section {
         top: 15vh;
         left: 50vw;
     }
-
 
     .about-text {
         align-self: center;
@@ -335,6 +490,46 @@ section {
     .about::after {
         top: 45vh;
         left: -15vw;
+    }
+
+    .chef-text {
+        font-size: 1.7rem;
+    }
+
+    .chef-text span {
+        font-size: 2.2rem;
+    }
+
+    .chef-text::after {
+        left: 50%;
+        bottom: 0;
+    }
+
+    .chef::after {
+        left: 50%;
+    }
+
+    .contact-img {
+        right: 0;
+        transform: rotate(-77.22deg) scale(1.5);
+    }
+
+    .iconify {
+        font-size: 2.2rem;
+    }
+
+    .contact-adress {
+        font-size: 3rem;
+    }
+
+    .contact-phone,
+    .contact-email {
+        font-size: 2.5rem;
+    }
+
+    .contact::after {
+        font-size: 15rem;
+        left: -5vw;
     }
 }
 
@@ -363,5 +558,39 @@ section {
 
     .about-text::after {
         top: 50vh;
+    }
+
+    .chef-text {
+        font-size: 2rem;
+    }
+
+    .chef-text span {
+        font-size: 2.5rem;
+    }
+
+    .chef-text::after {
+        font-size: 25rem;
+        left: 100%;
+        bottom: 0;
+    }
+
+    .chef::after {
+        top: 20%;
+        left: 60%;
+        transform: scale(1.2);
+    }
+
+    .contact-img {
+        transform: rotate(-77.22deg) scale(1.7);
+    }
+
+    .contact-text {
+        width: 60%;
+        margin-left: 5em;
+    }
+
+    .contact::after {
+        font-size: 15rem;
+        left: -5vw;
     }
 }
