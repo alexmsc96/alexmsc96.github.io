@@ -649,7 +649,7 @@ form {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 40vw 2fr 2fr 1fr;
+  grid-template-columns: 1fr 35vw 2fr 2fr 1fr;
 }
 
 .about {
@@ -670,7 +670,7 @@ footer {
 
 .footer-title {
   font-family: "Roboto Slab", sans-serif;
-  font-size: 1.2em;
+  font-size: .8em;
   margin-bottom: .2em;
   border-bottom: 1px solid var(--button);
 }
@@ -678,7 +678,7 @@ footer {
 .footer-p {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: .8em;
+  font-size: .5em;
 }
 
 .icons {
