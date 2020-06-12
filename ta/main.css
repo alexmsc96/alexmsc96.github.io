@@ -418,6 +418,20 @@ nav .link {
 
 /* Testimonial */
 
+.swiper-container {
+  height: 50vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--button);
+  display: none;
+}
+
+.swiper-pagination {
+  color: var(--button);
+}
+
 .testimonial {
   display: flex;
   align-items: center;
@@ -447,7 +461,7 @@ nav .link {
   text-align: left;
   font-size: 2.5rem;
   color: var(--text-inverse);
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   margin-top: 1em;
 }
 
@@ -473,6 +487,12 @@ nav .link {
 }
 
 @media (min-width: 1024px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+
   .testimonial-img {
     display: block;
     height: 50vh;
@@ -650,6 +670,7 @@ form {
 footer {
   display: grid;
   grid-template-columns: 1fr 35vw 2fr 2fr 1fr;
+  padding-bottom: 1em;
 }
 
 .about {
