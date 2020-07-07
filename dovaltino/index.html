@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dovaltino Flowers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="top">
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Vezi Magazinele Noastre</p>
+          </div>
+          <div class="phone">
+            <i class="fas fa-phone-square-alt"></i>
+            <p>0757.777.379</p>
+          </div>
+          <div class="email">
+            <i class="far fa-envelope"></i>
+            <p>Contact@Floraria-Dovaltino.ro</p>
+          </div>
+        </div>
+        <div class="options">
+          <img class="logo" src="images/logo.png" alt="Floraria-Dovaltino" />
+          <div class="search">
+            <input class="search-bar" placeholder="Cautare..." type="text" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="account">
+            <div id="cartModalBtn" class="cart">
+              <i class="fas fa-shopping-bag"></i>
+              <p>Cosul tau</p>
+              <div id="simpleCartModal" class="cart-modal">
+                <div class="cart-modal-content">
+                  <span id="closeBtn" class="closeBtn">&times;</span>
+                  <p>Cosul meu (0)</p>
+                  <p>Cosul tau este gol</p>
+                  <button class="modal-btn">Cosul Meu</button>
+                </div>
+              </div>
+            </div>
+            <div id="accountModalBtn" class="account-options">
+              <i class="fas fa-user"></i>
+              <p class="border-left">Intra in contul tau</p>
+              <p class="border-left">Creeaza un cont</p>
+              <div id="simpleAccountModal" class="account-modal">
+                <div class="account-modal-content">
+                  <span id="accoutCloseBtn" class="closeBtn">&times;</span>
+                  <h1 class="modal-title">Intra in contul tau</h1>
+                  <form class="modal-form" action="#">
+                    <label for="email">Email</label>
+                    <input type="email" />
+                    <label for="password">Parola</label>
+                    <input type="password" />
+                  </form>
+                  <div class="modal-text">
+                    <p><span class="underline">Ai uitat parola?</span></p>
+                    <button class="modal-btn">Logare</button>
+                    <p>
+                      Nu ai inca cont?
+                      <span class="underline">Inregistreaza-te</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-nav">
+          <p>Prima Pagina</p>
+          <p>Povestea Noastra</p>
+          <p>Flori in Cutii</p>
+          <p>Prelucrarea Datelor Cu Caracter Personal</p>
+          <p>Termeni Si Conditii</p>
+        </div>
+      </header>
+      <div class="hero">
+        <h1>Iti place sa o vezi <span>zambind?</span></h1>
+        <h2>Atunci rasfoieste catalogul nostru</h2>
+        <button class="hero-btn">Buchete de flori</button>
+        <button class="hero-btn">Comanda</button>
+        <div class="stats">
+          <div class="delivery">
+            <img src="images/delivery-truck.png" alt="delivery-truck" />
+            <p>Livrare Gratuita</p>
+          </div>
+          <div class="wrapping">
+            <img src="images/gift-wrap.png" alt="gift-wrap" />
+            <p>Ambalare Speciala De Cadou</p>
+          </div>
+          <div class="experience">
+            <img
+              src="images/certificate-medal-quality.png"
+              alt="certificate-medal-quality"
+            />
+            <p>Peste 20 De Ani de Experienta</p>
+          </div>
+          <div class="same-day">
+            <img src="images/quick.png" alt="same-day" />
+            <p>Livrare In Aceeasi Zi</p>
+          </div>
+        </div>
+      </div>
+      <main>
+        <h3>Produsele Noastre</h3>
+        <nav class="side-nav">
+          <ul>
+            <li>
+              <a href="#">Aranjamente Florale</a>
+            </li>
+            <li>
+              <a href="#">Buchete asortate</a>
+            </li>
+            <li>
+              <a href="#">Buchete elegante</a>
+            </li>
+            <li>
+              <a href="#">Figurine din flori naturale</a>
+            </li>
+            <li>
+              <a href="#">Plate Interior/Exterior</a>
+            </li>
+            <li>
+              <a href="#">Cadouri</a>
+            </li>
+            <li>
+              <a href="#">Tablouri Licheni Stabilizati</a>
+            </li>
+            <li>
+              <a href="#">Trandafiri Criogenati</a>
+            </li>
+            <li>
+              <a href="#">Evenimente</a>
+            </li>
+            <li>
+              <a href="#">Buchete mireasa</a>
+            </li>
+            <li>
+              <a href="#">Lumanari de cununie</a>
+            </li>
+            <li>
+              <a href="#">Lumanari de botez</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="banner">
+          <h1>
+            Alegem cele mai frumoase <strong>flori</strong> <br />
+            pentru cele <br />
+            mai frumoase <strong>momente</strong>
+          </h1>
+        </div>
+        <div class="best-sellers">
+          <h3>Cele mai bine vandute aranjamente</h3>
+          <div class="flower">
+            <img
+              src="images/buchet-25-bujori-albi-1.jpg"
+              alt="25 bujori albi"
+            />
+            <p>Buchet 25 bujori albi</p>
+            <p>320 lei</p>
+            <button>Comanda acum</button>
+          </div>
+          <div class="flower">
+            <img src="images/buchet-25-bujori-roz-1.jpg" alt="25 bujori roz" />
+            <p>Buchet 25 bujori roz</p>
+            <p>320 lei</p>
+            <button>Comanda acum</button>
+          </div>
+          <div class="flower">
+            <img src="images/buchet-lavanda-1.jpg" alt="buchet-lavanda-1" />
+            <p>Buchet lavanda</p>
+            <p>345 lei</p>
+            <button>Comanda acum</button>
+          </div>
+          <div class="flower">
+            <img
+              src="images/elixirul-tineretii-1.jpg"
+              alt="elixirul-tineretii-1"
+            />
+            <p>Elixirul tineretii</p>
+            <p>295 lei lei</p>
+            <button>Comanda acum</button>
+          </div>
+          <div class="flower">
+            <img
+              src="images/buchet-101-trandafiri-rosii-1.jpg"
+              alt="buchet-101-trandafiri-rosii-1"
+            />
+            <p>Buchet 101 trandafiri rosii</p>
+            <p>1030 lei</p>
+            <button>Comanda acum</button>
+          </div>
+        </div>
+        <div class="newsletter">
+          <div>
+            <h2>
+              Aboneaza-te acum la newsletterrul nostru. Fii la curent cu
+              ofertele si promotiile noastre.
+            </h2>
+            <div class="email-input">
+              <input type="email" placeholder="Adresa ta de email" />
+              <button class="newsletter-btn">Trimite</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="col">
+          <img src="images/logo.png" alt="Floraria-Dovaltino" />
+          <p>
+            Bine ai venit in Floraria Dovaltino Te invitam sa descoperi micile
+            parti de rai pe care le livram sub forma de buchete, aranjamente sau
+            plante de interior in toata splendoarea lor, oriunde iti doresti!
+          </p>
+          <div class="social">
+            <img
+              src="/images/facebook-round-line.png"
+              alt="facebook-round-line"
+            />
+            <img
+              src="/images/instagram-round-line.png"
+              alt="instagram-round-line"
+            />
+            <img
+              src="/images/youtube-round-line.png"
+              alt="youtube-round-line"
+            />
+            <img
+              src="/images/whatsapp-round-line.png"
+              alt="whatsapp-round-line"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <p>Categorii</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Aranjamente Florale</a></li>
+              <li><a href="#">Plante Interior/Exterior</a></li>
+              <li><a href="#">Cadouri</a></li>
+              <li><a href="#">Tablouri Licheni Stabilizati</a></li>
+              <li><a href="#">Trandafiri Criogenati</a></li>
+              <li><a href="#">Evenimente</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <p>Informatii Utile</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Politica de confidentialitate</a></li>
+              <li><a href="#">Platforma Sol </a></li>
+              <li><a href="#">Termeni si conditii</a></li>
+              <li><a href="#">Cariere</a></li>
+              <li><a href="#">Despre noi</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">ANPC</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <p>Intrebari Frecvente</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Cum platesc</a></li>
+              <li><a href="#">Cum cumpar</a></li>
+              <li><a href="#">Livrare</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <p>Beneficii</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Livrare gratuita</a></li>
+              <li><a href="#">Livrare prin proprii curieri</a></li>
+              <li><a href="#">Florari din 2000</a></li>
+              <li><a href="#">Locul 7 in Europa</a></li>
+              <li><a href="#">Felicitare cadou</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <p>Contul Meu</p>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Contul meu</a></li>
+              <li><a href="#">Inregistrare</a></li>
+              <li><a href="#">Comenzile mele</a></li>
+              <li><a href="#">Am uitat parola</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
