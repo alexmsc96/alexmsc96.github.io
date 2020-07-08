@@ -15,7 +15,6 @@ body {
     min-height: 8vh;
     background-color: aquamarine;
     position: relative;
-    width: 50%;
 }
 
 .nav-links {
@@ -23,7 +22,7 @@ body {
     right: 0;
     height: 100vh;
     top: 8vh;
-    width: 100%;
+    width: 50%;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
