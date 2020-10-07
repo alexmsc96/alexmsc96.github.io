@@ -165,7 +165,7 @@ p {
                 font-size: 1.25rem;
                 font-size: clamp(.8rem, calc(4vw+1rem), 1.25rem);
                 color: #fff;
-                padding: 2em 4em;
+                padding: 2em 3em;
             }
         }
     }
@@ -187,7 +187,7 @@ p {
 @media (min-width: 768px) {
     
     .nav {
-        height: 5vh;
+        height: 3rem;
         background-color: var(--clr-main);
         width: 100%;
 
