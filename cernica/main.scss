@@ -37,6 +37,7 @@ p {
     max-width: 65rem;
     margin: 0 auto;
     overflow-x: hidden;
+    position: relative;
 }
 
 .card-title {
@@ -173,13 +174,13 @@ p {
     .burger {
         cursor: pointer;
         position: absolute;
-        top: 1%;
-        right: 1%;
+        top: 0;
+        right: 0;
 
         div {
             width: 25px;
             height: 3px;
-            background-color: var(--clr-text);
+            background-color: var(--clr-dark);
             margin: 5px;
             transition: all 0.3s ease;
         }
