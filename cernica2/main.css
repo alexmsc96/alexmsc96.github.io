@@ -14,9 +14,7 @@ body {
 }
 
 header {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  overflow-x: hidden;
 }
 
 :root {
