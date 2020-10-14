@@ -33,6 +33,12 @@ p {
 }
 
 .container {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.main {
   width: 90%;
   max-width: 70rem;
   margin: 0 auto;
@@ -47,7 +53,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .main {
     width: 85%;
   }
   .footer-container {
@@ -147,8 +153,6 @@ p {
   background-position: center top;
   background-attachment: fixed;
   position: relative;
-  margin: 0;
-  overflow-x: hidden;
 }
 
 .hero .logo {
@@ -545,15 +549,16 @@ iframe {
 }
 
 footer {
-  background-color: #fff;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1em;
-  padding-bottom: 1em;
+  background-color: #fff;
+  padding: 1em;
 }
 
 .footer-content .contact {

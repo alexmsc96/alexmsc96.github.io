@@ -34,6 +34,12 @@ p {
 }
 
 .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.main {
     width: 90%;
     max-width: 70rem;
     margin: 0 auto;
@@ -49,7 +55,7 @@ p {
 
 
 @media (min-width: 768px) {
-    .container {
+    .main {
         width: 85%;
     }
     .footer-container {
@@ -151,9 +157,8 @@ p {
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
+
     position: relative;
-    margin: 0;
-    overflow-x: hidden;
 
 
     .logo {
@@ -503,13 +508,15 @@ iframe {
 
 // FOOTER 
 footer {
-    background-color: #fff;
+    
+    overflow-x: hidden;
+    position: relative;
 }
 
 .footer-content {
     display: flex;
-    margin-top: 1em;
-    padding-bottom: 1em;
+    background-color: #fff;
+    padding: 1em;
 
     .contact {
         display: flex;
