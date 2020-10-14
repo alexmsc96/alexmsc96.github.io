@@ -13,10 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    overflow-x: hidden;
-}
-
 :root {
     --clr-main: #ad5634;
     --clr-accent: #506d2d;
@@ -157,6 +153,7 @@ p {
     background-attachment: fixed;
     position: relative;
     margin: 0;
+    overflow-x: hidden;
 
 
     .logo {
