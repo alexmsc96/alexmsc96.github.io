@@ -2,7 +2,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger')
     const nav = document.querySelector('.nav__links')
     const navLinks = document.querySelectorAll('.nav__links li')
-    const body = document.querySelector('.container')
+    const body = document.querySelector('.main')
 
 
     // Toggle Nav
