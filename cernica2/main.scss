@@ -55,11 +55,9 @@ p {
 @media (min-width: 768px) {
     .container {
         width: 85%;
-        max-width: 65rem;
     }
     .footer-container {
         width: 85%;
-        max-width: 65rem;
     }
 }
 
@@ -394,6 +392,13 @@ p {
             }
         }
     }
+}
+
+// VIDEO
+
+iframe {
+    display: block;
+    width: 100%;
 }
 
 // ASIDE 

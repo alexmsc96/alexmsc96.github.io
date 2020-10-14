@@ -55,11 +55,9 @@ p {
 @media (min-width: 768px) {
   .container {
     width: 85%;
-    max-width: 65rem;
   }
   .footer-container {
     width: 85%;
-    max-width: 65rem;
   }
 }
 
@@ -415,6 +413,11 @@ p {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+}
+
+iframe {
+  display: block;
+  width: 100%;
 }
 
 .aside {
