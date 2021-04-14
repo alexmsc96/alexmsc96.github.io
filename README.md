@@ -3,8 +3,9 @@ Smaller projects I made when I first started learning Front-End Development.
 They are done with basic HTML CSS and JavaScript
 
 ## Weather-App
-A weather application where users can automatically get the forecast for their location or they can search for one
-![WeatherApp](https://user-images.githubusercontent.com/62430558/114779716-227da880-9d7f-11eb-8850-c920b73422fd.png)
+A weather application where users can automatically get the forecast for their location or they can search for one 
+[Open](https://alexmsc96.github.io/weather-app2.1/)
+
 
 ## Trust Alliance
 A landing page for an IT company 
