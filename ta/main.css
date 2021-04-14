@@ -13,12 +13,10 @@
   --text-inverse: #444;
 }
 
-
 .wrapper {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 
 /* Navbar styles start */
 
@@ -28,13 +26,13 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 .logo {
-  margin: .5em;
+  margin: 0.5em;
   color: var(--background);
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
@@ -59,7 +57,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: var(--text-inverse);
+  background: var(--button);
   height: 2px;
   width: 1.5em;
   border-radius: 2px;
@@ -68,7 +66,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -85,7 +83,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--background);
+  background: var(--button);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -111,16 +109,16 @@ nav .link {
   font-size: 1rem;
 }
 
-.nav-toggle:checked~nav {
+.nav-toggle:checked ~ nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked~nav a {
+.nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.nav-toggle:checked~.nav-toggle-label {
+.nav-toggle:checked ~ .nav-toggle-label {
   transform: rotate(90deg);
 }
 
@@ -131,15 +129,15 @@ nav .link {
   background: var(--text);
   color: var(--background);
   margin: 0 0 1em 1em;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   border: 1px solid white;
   cursor: pointer;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contact-btn:hover,
@@ -155,7 +153,7 @@ nav .link {
 
   header {
     display: grid;
-    grid-template-columns: .5fr auto minmax(500px, 5fr) .5fr;
+    grid-template-columns: 0.5fr auto minmax(500px, 5fr) 0.5fr;
   }
 
   .logo {
@@ -179,7 +177,7 @@ nav .link {
     opacity: 1;
     color: var(--text-inverse);
     position: relative;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   span {
@@ -187,7 +185,7 @@ nav .link {
   }
 
   .contact-btn {
-    font-size: .7rem;
+    font-size: 0.7rem;
     background: var(--button);
     margin-top: 1em;
     color: var(--text);
@@ -199,7 +197,6 @@ nav .link {
     background: var(--text);
     color: var(--button);
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -208,11 +205,11 @@ nav .link {
   }
 
   nav .link {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .contact-btn {
-    margin-top: .5em;
+    margin-top: 0.5em;
     font-size: 1em;
   }
 }
@@ -280,13 +277,13 @@ nav .link {
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 1.2rem;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border: 1px solid var(--button);
   color: var(--text);
   background: transparent;
   margin-bottom: 1em;
   border-radius: 5px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .hero-btn:hover,
@@ -376,7 +373,7 @@ nav .link {
   border: 1px solid var(--button);
   border-radius: 5px;
   color: var(--text);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .demo-btn:hover,
@@ -409,7 +406,6 @@ nav .link {
   }
 }
 
-
 @media (min-width: 1440px) {
   .black {
     width: 30vw;
@@ -418,30 +414,17 @@ nav .link {
 
 /* Testimonial */
 
-.swiper-container {
-  height: 50vh;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--button);
-  display: none;
-}
-
-.swiper-pagination {
-  color: var(--button);
-}
-
 .testimonial {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('images/shapelined-_JBKdviweXI-unsplash.jpg');
+  background-image: url("images/shapelined-_JBKdviweXI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
   margin-bottom: 2em;
+  overflow: hidden;
 }
 
 .t-container {
@@ -461,7 +444,7 @@ nav .link {
   text-align: left;
   font-size: 2.5rem;
   color: var(--text-inverse);
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   margin-top: 1em;
 }
 
@@ -487,11 +470,6 @@ nav .link {
 }
 
 @media (min-width: 1024px) {
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
 
   .testimonial-img {
     display: block;
@@ -570,7 +548,7 @@ nav .link {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url('images/newsletter.png');
+  background-image: url("images/newsletter.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -606,14 +584,14 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .2em;
+  padding: 0.2em;
   border: none;
   border-radius: 5px;
   position: absolute;
   right: 0;
   cursor: pointer;
   color: var(--button);
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-size: 1.8rem;
 }
 
@@ -626,9 +604,7 @@ form {
 ::placeholder {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
-  color: rgb(184,
-      183,
-      183);
+  color: rgb(184, 183, 183);
 }
 
 @media (min-width: 768px) {
@@ -637,7 +613,7 @@ form {
   }
 
   ::placeholder {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -675,31 +651,31 @@ footer {
 
 .about {
   flex-direction: column;
-  grid-column: 2 /span 1;
+  grid-column: 2 / span 1;
   margin: 0 auto;
 }
 
 .company {
-  grid-column: 3 /span 1;
+  grid-column: 3 / span 1;
   margin: 0 auto;
 }
 
 .follow {
-  grid-column: 4 /span 1;
+  grid-column: 4 / span 1;
   margin: 0 auto;
 }
 
 .footer-title {
   font-family: "Roboto Slab", sans-serif;
-  font-size: .8em;
-  margin-bottom: .2em;
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
   border-bottom: 1px solid var(--button);
 }
 
 .footer-p {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 .icons {
@@ -707,7 +683,7 @@ footer {
 }
 
 .icons img {
-  margin-right: .1em;
+  margin-right: 0.1em;
   width: 7vw;
 }
 
@@ -727,7 +703,7 @@ footer {
   }
 
   .icons img {
-    margin-right: .4em;
+    margin-right: 0.4em;
     width: 3vw;
   }
 
