@@ -4,21 +4,25 @@ They are done with basic HTML CSS and JavaScript
 
 ## Weather-App
 A weather application where users can automatically get the forecast for their location or they can search for one 
+
 **[Check it out](https://alexmsc96.github.io/weather-app2.1/)**
-![WeatherApp](https://user-images.githubusercontent.com/62430558/114780544-383f9d80-9d80-11eb-939d-d42d4dd883f3.png)
+![Weather mock-up](https://user-images.githubusercontent.com/62430558/115125744-e3479580-9fd2-11eb-8048-1bc951b842d3.png)
+
 
 
 ## Trust Alliance
 A landing page for an IT company 
 **[Check it out](https://alexmsc96.github.io/ta/)**
-![TrustAlliance](https://user-images.githubusercontent.com/62430558/114779965-6e305200-9d7f-11eb-9da6-68e31d805a6d.png)
+![Ta mockup](https://user-images.githubusercontent.com/62430558/115125774-05d9ae80-9fd3-11eb-9dd5-bbd204535cbc.png)
+
 
 ## food
 A landing page for a fine-dining restaurant
 **[Check it out](https://alexmsc96.github.io/restaurantv2/)**
-![FOOD](https://user-images.githubusercontent.com/62430558/114780004-7c7e6e00-9d7f-11eb-9979-81f907ab0ea7.png)
+![Rest mock-up](https://user-images.githubusercontent.com/62430558/115125768-007c6400-9fd3-11eb-826b-7c9d71f3eb6a.png)
+
 
 ## to-do-app
 A small to-do application where users can insert todos, mark them as complete and delete them
 **[Check it out](https://alexmsc96.github.io/todo-app/)**
-![todo](https://user-images.githubusercontent.com/62430558/114780178-b5b6de00-9d7f-11eb-8130-f5b53947d274.png)
+![todo mock-up](https://user-images.githubusercontent.com/62430558/115125775-096d3580-9fd3-11eb-9f48-29b9dee31e1b.png)
