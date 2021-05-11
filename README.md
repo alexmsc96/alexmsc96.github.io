@@ -30,3 +30,4 @@ A small to-do application where users can insert todos, mark them as complete an
 ## berryNews
 Front-end part of a news website done with HTML, vanilla JavaScript and CSS
 **[Check it out](https://alexmsc96.github.io/berry/)**
+**[Check it out](https://alexmsc96.github.io/berry/netherlands-en-am.html?)**
