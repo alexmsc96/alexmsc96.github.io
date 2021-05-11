@@ -26,3 +26,7 @@ A landing page for a fine-dining restaurant
 A small to-do application where users can insert todos, mark them as complete and delete them
 **[Check it out](https://alexmsc96.github.io/todo-app/)**
 ![todo mock-up](https://user-images.githubusercontent.com/62430558/115125775-096d3580-9fd3-11eb-9f48-29b9dee31e1b.png)
+
+## berryNews
+Front-end part of a news website done with HTML, vanilla JavaScript and CSS
+**[Check it out](https://alexmsc96.github.io/berry/)**
