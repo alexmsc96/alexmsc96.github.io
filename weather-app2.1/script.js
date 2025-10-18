@@ -94,21 +94,33 @@ function getDayName(dateStr, locale) {
 }
 
 function getIcon(data) {
-  if (data.list[0].weather[0].description.includes("clouds")) {
+  const weatherCondition = data.list[0].weather[0].description.toLowerCase();
+  const mainWeather = data.list[0].weather[0].main.toLowerCase();
+  
+  // Change background image based on weather
+  if (weatherCondition.includes("cloud") || mainWeather === "clouds") {
     weatherIcon.src = "./images/clouds.png";
+    document.body.style.backgroundImage = "url('./images/cloudy.jpg')";
   } else if (
-    data.list[0].weather[0].description.includes("rain") ||
-    data.list[0].weather[0].description.includes("drizzle")
+    weatherCondition.includes("rain") ||
+    weatherCondition.includes("drizzle") ||
+    mainWeather === "rain" ||
+    mainWeather === "drizzle"
   ) {
     weatherIcon.src = "./images/rain.png";
-  } else if (data.list[0].weather[0].description.includes("thunderstorm ")) {
+    document.body.style.backgroundImage = "url('./images/rain.jpg')";
+  } else if (weatherCondition.includes("thunderstorm") || mainWeather === "thunderstorm") {
     weatherIcon.src = "./images/thunderstorm.png";
-  } else if (data.list[0].weather[0].description.includes("snow ")) {
+    document.body.style.backgroundImage = "url('./images/rain.jpg')";
+  } else if (weatherCondition.includes("snow") || mainWeather === "snow") {
     weatherIcon.src = "./images/snow.png";
-  } else if (data.list[0].weather[0].description.includes("clear ")) {
+    document.body.style.backgroundImage = "url('./images/snow.jpg')";
+  } else if (weatherCondition.includes("clear") || mainWeather === "clear") {
     weatherIcon.src = "./images/sun.png";
+    document.body.style.backgroundImage = "url('./images/sunny.jpg')";
   } else {
     weatherIcon.src = "./images/mist.png";
+    document.body.style.backgroundImage = "url('./images/cloudy.jpg')";
   }
 }
 
